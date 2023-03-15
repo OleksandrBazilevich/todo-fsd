@@ -1,0 +1,12 @@
+.ant-spin-spinning {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ant-spin-blur {
+  opacity: 0 !important;
+}
+* {
+  line-height: normal;
+}
