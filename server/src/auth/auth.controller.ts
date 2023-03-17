@@ -6,10 +6,10 @@ import {
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
-import { AuthService } from './auth.service';
+import { AuthService } from 'src/auth/auth.service';
 
-import { AuthDto } from './dto/auth.dto';
-import { RefreshTokenDto } from './dto/refreshToken.dto';
+import { AuthDto } from 'src/auth/dto/auth.dto';
+import { RefreshTokenDto } from 'src/auth/dto/refreshToken.dto';
 
 @Controller('auth')
 export class AuthController {

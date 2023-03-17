@@ -1,10 +1,13 @@
 import { Injectable } from '@nestjs/common/decorators';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { User, UserDocument } from 'src/user/user.schema';
-import { CreateTaskDto } from './dto/CreateTask.dto';
-import { GetTasksFilterDto } from './dto/GetTaskFilter.dto';
-import { UpdateTaskDto, UpdateTaskStatusDto } from './dto/UpdateTask.dto';
+
+import { CreateTaskDto } from 'src/task/dto/CreateTask.dto';
+import { GetTasksFilterDto } from 'src/task/dto/GetTaskFilter.dto';
+import {
+  UpdateTaskDto,
+  UpdateTaskStatusDto,
+} from 'src/task/dto/UpdateTask.dto';
 import { Task } from './task.schema';
 
 @Injectable()

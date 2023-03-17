@@ -1,6 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { User, UserDocument } from 'src/user/user.schema';
 
 export type TaskDocument = Task & Document;
 

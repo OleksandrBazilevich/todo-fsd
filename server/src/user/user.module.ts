@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { UserController } from './user.controller';
-import { UserService } from './user.service';
-import { User, UserSchema } from './user.schema';
-import { TaskModule } from 'src/task/task.module';
-import { forwardRef } from '@nestjs/common/utils/forward-ref.util';
+import { UserController } from 'src/user/user.controller';
+import { UserService } from 'src/user/user.service';
+import { User, UserSchema } from 'src/user/user.schema';
 
 @Module({
   imports: [
