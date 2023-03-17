@@ -14,18 +14,15 @@ import {
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 
-import { TaskService } from '..//task/task.service';
-import { Task } from '..//task/task.schema';
-import { CreateTaskDto } from '../task/dto/CreateTask.dto';
-import { GetTasksFilterDto } from '..//task/dto/GetTaskFilter.dto';
+import { TaskService } from '../task/task.service';
+import { Task } from '../task/task.schema';
+import { CreateTaskDto } from './dto/CreateTask.dto';
+import { GetTasksFilterDto } from './dto/GetTaskFilter.dto';
 
-import {
-  UpdateTaskDto,
-  UpdateTaskStatusDto,
-} from '..//task/dto/UpdateTask.dto';
-import { User } from '..//user/user.decorator';
+import { UpdateTaskDto, UpdateTaskStatusDto } from './dto/UpdateTask.dto';
+import { User } from '../user/user.decorator';
 
-import { Auth } from '..//auth/auth.decorator';
+import { Auth } from '../auth/auth.decorator';
 
 @Controller('task')
 export class TaskController {
