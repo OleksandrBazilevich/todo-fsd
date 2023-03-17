@@ -3,9 +3,9 @@ import { ConfigService } from '@nestjs/config';
 import { InjectModel } from '@nestjs/mongoose';
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
-import { User } from 'src/user/user.decorator';
-import { UserDocument, UserSchema } from 'src/user/user.schema';
-import { UserService } from 'src/user/user.service';
+import { User } from '../../user/user.decorator';
+import { UserDocument, UserSchema } from '../../user/user.schema';
+import { UserService } from '../../user/user.service';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
