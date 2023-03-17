@@ -16,8 +16,8 @@ import { AuthGuard } from '@nestjs/passport';
 
 import { TaskService } from 'src/task/task.service';
 import { Task } from 'src/task/task.schema';
-import { CreateTaskDto } from './dto/createTask.dto';
-import { GetTasksFilterDto } from './dto/getTaskFilter.dto';
+import { CreateTaskDto } from '../task/dto/createTask.dto';
+import { GetTasksFilterDto } from '../task/dto/getTaskFilter.dto';
 
 import {
   UpdateTaskDto,
