@@ -3,7 +3,7 @@ import { TaskService } from './task.service';
 import { TaskController } from './task.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Task, TaskSchema } from './task.schema';
-import { UserModule } from '../ser/user.module';
+import { UserModule } from '../user/user.module';
 import { PassportModule } from '@nestjs/passport';
 
 @Module({
