@@ -6,10 +6,10 @@ import {
 import { JwtService } from '@nestjs/jwt';
 import { compare, genSalt, hash } from 'bcryptjs';
 
-import { UserService } from '..//user/user.service';
-import { User, UserDocument } from '..//user/user.schema';
-import { AuthDto } from '..//auth/dto/auth.dto';
-import { RefreshTokenDto } from '..//auth/dto/refreshToken.dto';
+import { UserService } from '../user/user.service';
+import { User, UserDocument } from '../user/user.schema';
+import { AuthDto } from '../auth/dto/auth.dto';
+import { RefreshTokenDto } from '../auth/dto/refreshToken.dto';
 
 @Injectable()
 export class AuthService {

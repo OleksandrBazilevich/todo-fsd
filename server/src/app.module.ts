@@ -1,15 +1,12 @@
 import { Module } from '@nestjs/common';
-import { JwtModule } from '@nestjs/jwt';
-
+import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
-import { PassportModule } from '@nestjs/passport';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { getMongoDbConfig } from './config/mongo.config';
-import { UserModule } from './user/user.module';
-import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TaskModule } from './task/task.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
