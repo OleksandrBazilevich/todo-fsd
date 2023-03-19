@@ -31,11 +31,11 @@ export const Routes: FC = () => {
   const authRoutes: IRoute[] = [
     {
       path: Paths.HOME,
-      element: viewer?._id ? <HomePage /> : <Navigate to={'/login'} replace />,
+      element: viewer?._id ? <HomePage /> : <Navigate to={'/register'} replace />,
     },
     {
       path: Paths.TASK,
-      element: viewer?._id ? <TaskPage /> : <Navigate to={'/login'} replace />,
+      element: viewer?._id ? <TaskPage /> : <Navigate to={'/register'} replace />,
     },
   ]
 
